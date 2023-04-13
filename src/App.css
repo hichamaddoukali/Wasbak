@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.chart-container {
+  width: calc(100% / 5);
+  box-sizing: border-box;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    width: 100%;
+  }
+}
