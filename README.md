@@ -9,6 +9,3 @@ Npm install
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### you will see 3 charts:
-#### 'waterniveau','watertoevoer' and 'waterafvoer'. All in l/m. You can modify the data and it will be changed immediately in the charts
