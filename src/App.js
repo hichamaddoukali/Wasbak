@@ -8,7 +8,7 @@ function App() {
   const [inputLevel, setInputLevel] = useState(0);
   const [waterLevel, setWaterLevel] = useState(0);
   const [kraanSnelheid, setKraanSnelheid] = useState(0);
-  const [wasbakSnelheid, setWasbakSnelheid] = useState(0);
+  //const [wasbakSnelheid, setWasbakSnelheid] = useState(0);
   const [waterLevelHistory, setWaterLevelHistory] = useState([]);
 
   const client = useRef(null);
@@ -83,14 +83,14 @@ function App() {
       </div>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
-          <label htmlFor="desired-level">Wensniveau: </label>
+          <label htmlFor="wens-niveau">Wensniveau: </label>
           <input type="number" id="desired-level" onChange={(e) => setInputLevel(e.target.value)} />
           <button type="submit">Verzend</button>
         </div>
       </form>
       <p>Waterniveau: {waterLevel.toFixed(2)}%</p>
       <p>Vulsnelheid: {kraanSnelheid} liter/min</p>
-      <p>Remaining capacity: {calculateDifference()}%</p>
+      <p>Blijft over: {Bereken verschil()}%</p>
       {/*       Functie voor het leeg laten lopen van de wasbak
  <p>Vulsnelheid: {tapStatus ? wasbakSnelheid : 0} liter/min</p> */}
     </div>
