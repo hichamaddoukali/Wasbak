@@ -3,7 +3,7 @@
 
 ## What you have to install to run this project
 
-Npm install
+Npm install, 
 Npm start
 
 ### side note: There's no connection possible with the hivemq broker.
